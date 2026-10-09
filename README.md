@@ -35,6 +35,15 @@ A versão atual usa ilustrações em SVG (sem depender de banco de imagens) para
 - Baixe e salve em `assets/img/` (ex: `hero-foto.jpg`).
 - No `index.html`, troque o `src="assets/img/hero-illustration.svg"` pelo caminho da nova foto.
 
+## SEO
+
+Já incluídos: `title`/`description` com palavra-chave de localização, `canonical`, Open Graph/Twitter Card, dados estruturados (Schema.org `ProfessionalService`, com endereço e telefone), `robots.txt` e `sitemap.xml`, e só um `<h1>` por página.
+
+Ainda falta, fora do código:
+- Criar uma imagem `assets/img/og-image.png` (1200x630px) — o `index.html` já referencia `assets/img/og-image.png`, só falta o arquivo existir, senão o link quebra quando alguém compartilhar o site.
+- Cadastrar/atualizar o **Perfil da Empresa no Google** (Google Business Profile) com o mesmo nome, endereço e telefone do site — é o fator de maior peso pra aparecer em buscas locais ("regularização de imóveis São Carlos"), e não dá pra fazer por código.
+- Depois de publicado, submeter a URL no **Google Search Console** pra acelerar a indexação.
+
 ## Formulário
 
 O formulário de contato envia os dados para o mesmo endpoint Power Automate já configurado (meta tag `flow-endpoint` no `<head>`), e usa a API pública do ViaCEP para autocompletar endereço a partir do CEP — nenhuma mudança de backend é necessária.
